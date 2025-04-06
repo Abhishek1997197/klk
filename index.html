@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Book</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      overflow-x: hidden;
+    }
+    .section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .video-container {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 40vh;
+      background: black;
+      z-index: 10;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .content {
+      padding: 20px;
+      height: auto;
+      background: #fff;
+    }
+    .animal-info {
+      max-width: 800px;
+      margin: 0 auto;
+      padding-bottom: 100px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1em;
+    }
+    @media (max-width: 768px) {
+      .video-container {
+        height: 30vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- LION SECTION -->
+<div class="section">
+  <div class="video-container">
+    <video controls autoplay muted loop>
+      <source src="lion.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="content">
+    <div class="animal-info">
+      <h1>Lion</h1>
+      <p><strong>Category:</strong> Mammal</p>
+      <p><strong>Type:</strong> Carnivore</p>
+      <p>The lion is one of the big cats in the genus Panthera and a member of the family Felidae. It is most recognisable for its muscular, deep-chested body and short, rounded head, a reduced neck and round ears, and a hairy tuft at the end of its tail.</p>
+      <p>Lions live for 10–14 years in the wild. In captivity, they can live over 20 years. Lions typically inhabit savanna and grassland, although they may take to bush and forest.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ELEPHANT SECTION -->
+<div class="section">
+  <div class="video-container">
+    <video controls autoplay muted loop>
+      <source src="elephant.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="content">
+    <div class="animal-info">
+      <h1>Elephant</h1>
+      <p><strong>Category:</strong> Mammal</p>
+      <p><strong>Type:</strong> Herbivore</p>
+      <p>Elephants are large mammals of the family Elephantidae and the order Proboscidea. Three species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant.</p>
+      <p>They are intelligent animals with complex social structures. Elephants are known for their memory, and they use their trunks for breathing, lifting water, and grasping objects.</p>
+    </div>
+  </div>
+</div>
+
+<!-- PENGUIN SECTION -->
+<div class="section">
+  <div class="video-container">
+    <video controls autoplay muted loop>
+      <source src="penguin.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="content">
+    <div class="animal-info">
+      <h1>Penguin</h1>
+      <p><strong>Category:</strong> Bird</p>
+      <p><strong>Type:</strong> Carnivore</p>
+      <p>Penguins are a group of aquatic flightless birds. They live almost exclusively in the Southern Hemisphere, with only one species found north of the equator.</p>
+      <p>Highly adapted for life in the water, penguins have counter-shaded dark and white plumage and flippers for swimming. Most penguins feed on krill, fish, squid, and other forms of sea life caught while swimming underwater.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
